@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get("/", function(req, res) {
+app.get("https://rakeshbaddi.github.io/live-weather-report/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/", function(req, res) {
+app.post("https://rakeshbaddi.github.io/live-weather-report/", function(req, res) {
 
   const query = req.body.cityName;
   const apiKey = "0c0b4df092dbae4f8a5b91894c65ca1d";
